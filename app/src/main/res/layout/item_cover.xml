@@ -1,0 +1,57 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/white_background"
+    app:cardCornerRadius="20dp"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/coverImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            android:contentDescription="Product Image"
+            android:gravity="center"
+            android:scaleType="centerCrop" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coverImageView"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="15dp"
+            android:text="Price: $0.00"
+            android:textColor="@android:color/black" />
+
+        <!-- Customize Button -->
+        <Button
+            android:id="@+id/customizeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/priceTextView"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/lavender_border"
+            android:text="Customize"
+            app:cardCornerRadius="20dp"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

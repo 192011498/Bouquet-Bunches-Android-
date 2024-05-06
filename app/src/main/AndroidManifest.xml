@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <queries>
+
+        <!-- List of apps which you want to support for Intent pay -->
+        <package android:name="com.google.android.apps.nbu.paisa.user" />
+        <package android:name="com.phonepe.app" />
+        <!--
+             Specific intents you query for,
+             eg: for a custom share UI
+        -->
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+        </intent>
+    </queries>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo2"
+        android:label="Bouquet &amp; Bunches"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/logo2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SignupLoginRealtime"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".AddFlowers"
+            android:exported="false" />
+        <activity
+            android:name=".AddTies"
+            android:exported="false" />
+        <activity
+            android:name=".Tie"
+            android:exported="false" />
+        <activity
+            android:name=".Flower"
+            android:exported="false" />
+        <activity
+            android:name=".Uploadflower"
+            android:exported="false" />
+        <activity
+            android:name=".TiesItem"
+            android:exported="false" />
+        <activity
+            android:name=".FlowerItem"
+            android:exported="false" />
+
+        <activity
+            android:name=".sellOrders"
+            android:exported="false" />
+        <activity
+            android:name=".customize1"
+            android:label="customize1"></activity>
+        <activity
+            android:name=".customize2"
+            android:label="customize2"></activity>
+        <activity
+            android:name=".customize6"
+            android:label="customize6"></activity>
+        <activity
+            android:name=".customize3"
+            android:label="customize3"></activity>
+        <activity
+            android:name=".customize4"
+            android:label="customize4"></activity>
+        <activity
+            android:name=".customize5"
+            android:label="customize5"></activity>
+        <activity
+            android:name=".customize7"
+            android:label="customize7"></activity>
+        <activity
+            android:name=".customize8"
+            android:label="customize8"></activity>
+        <activity
+            android:name=".customize9"
+            android:label="customize9"></activity>
+        <activity
+            android:name=".customize10"
+            android:label="customize10"></activity>
+        <activity
+            android:name=".customize11"
+            android:label="customize11"></activity>
+        <activity
+            android:name=".customize12"
+            android:label="customize12"></activity>
+        <activity
+            android:name=".customize13"
+            android:label="customize13"></activity>
+        <activity
+            android:name=".customize14"
+            android:label="customize14"></activity>
+        <activity
+            android:name=".cusOrders"
+            android:exported="false" />
+        <activity
+            android:name=".payment"
+            android:exported="false" />
+        <activity
+            android:name=".Address"
+            android:exported="false" />
+        <activity
+            android:name=".customize"
+            android:exported="false" />
+        <activity
+            android:name=".WrapperItem"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".addWrapper"
+            android:exported="false" />
+        <activity
+            android:name=".sellHome"
+            android:exported="false" />
+        <activity
+            android:name=".covers"
+            android:exported="false" />
+        <activity
+            android:name=".cusHome"
+            android:exported="false" />
+        <activity
+            android:name=".HelperClass2"
+            android:exported="false" />
+        <activity
+            android:name=".login2"
+            android:exported="false" />
+        <activity
+            android:name=".usertype"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".signup2"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="your_key_here" />
+    </application>
+
+</manifest>

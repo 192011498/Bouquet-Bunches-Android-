@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lavender">#8692f7</color>
+    <color name="grey">#ff424242</color>
+    <color name="color1">#07212e</color>
+
+        <color name="colorPrimary">#3F51B5</color>
+        <color name="colorPrimaryDark">#303F9F</color>
+        <color name="colorAccent">#FF4081</color>
+    <color name="customerButtonColor">#2196F3</color>
+    <color name="customerButtonPressedColor">#1976D2</color>
+    <color name="sellerButtonColor">#4CAF50</color> <!-- Default color when not pressed -->
+    <color name="sellerButtonPressedColor">#388E3C</color> <!-- Color when pressed -->
+    <color name="customer_button_color">#3F51B5</color> <!-- Normal state color -->
+    <color name="customer_button_pressed_color">#1E88E5</color> <!-- Pressed state color -->
+
+    <!-- Colors for seller button -->
+    <color name="seller_button_color">#4CAF50</color> <!-- Normal state color -->
+    <color name="seller_button_pressed_color">#388E3C</color> <!-- Pressed state color -->
+
+
+</resources>

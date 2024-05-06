@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "450715486099",
+    "project_id": "bshop-cf7e4",
+    "storage_bucket": "bshop-cf7e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450715486099:android:95765345c1fc17d84a8a66",
+        "android_client_info": {
+          "package_name": "com.example.bshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUsJSnzGmUOhReDa5Zreof58xFrk4JZ2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

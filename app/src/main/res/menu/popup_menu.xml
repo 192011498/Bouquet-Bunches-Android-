@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_add_wrappers"
+        android:title="Add Wrappers" />
+    <item
+        android:id="@+id/menu_view_wrappers"
+        android:title="View Wrappers" />
+    <item
+        android:id="@+id/menu_add_flowers"
+        android:title="Add Flowers" />
+    <item
+        android:id="@+id/menu_view_flowers"
+        android:title="View Flowers" />
+    <item
+        android:id="@+id/menu_add_ties"
+        android:title="Add Ties" />
+    <item
+        android:id="@+id/menu_view_ties"
+        android:title="View Ties" />
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Logout" />
+</menu>

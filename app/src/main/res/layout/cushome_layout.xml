@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- CardView to hold the item layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="30dp">
+
+        <!-- Container layout for each item -->
+        <LinearLayout
+            android:id="@+id/itemContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Individual item layout -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_background"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <!-- ImageView for the image preview -->
+                <ImageView
+                    android:id="@+id/shopImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/place_holder"/>
+
+                <!-- TextViews for shopName and shopAddress -->
+                <TextView
+                    android:id="@+id/shopNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_below="@id/shopImageView"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/shopAddressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_below="@id/shopNameTextView"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
